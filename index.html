@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try catFont</title>
+
+    <style>
+        @font-face {
+        font-family: 'catFont';
+        src: url('./Catfont-Regular.ttf');
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3vw;
+        }
+
+        textarea{
+            font-family: 'catFont', 'cursive';
+            font-size: 3vw;
+            text-shadow:
+                -0.02vw -0.02vw 0 #000, /* Top-left shadow */
+                0.02vw -0.02vw 0 #000, /* Top-right shadow */
+                -0.02vw 0.02vw 0 #000, /* Bottom-left shadow */
+                0.02vw 0.02vw 0 #000; /* Bottom-right shadow */
+            
+            margin: auto;
+            display: block;
+        }
+        div{
+            text-align: center;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font-family: cursive; font-weight: normal;">Write in <br><span style="font-family: 'catFont'; font-size: 6vw;">catfont!</span></h1>
+    <div>
+        <a href="./Catfont-Regular.ttf" download>download Catfont-Regular</a>
+    </div>
+    
+    <br>
+    <textarea rows="10" cols="50">
+        Hello in catfont.
+    </textarea>
+    
+</body>
+</html>
