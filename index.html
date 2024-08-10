@@ -36,6 +36,21 @@
     </style>
 </head>
 <body>
+    <script>
+        const fs = require('fs');
+
+        // Specify the path to your text file
+        const filePath = './alma.txt';
+        
+        // Read the file asynchronously
+        fs.readFile(filePath, 'utf8', (err, data) => {
+            if (err) {
+                console.error('Error reading the file:', err);
+                return;
+            }
+            console.log('File content:', data);
+        });
+    </script>
     <h1 style="font-family: cursive; font-weight: normal;">Write in <br><span style="font-family: 'catFont'; font-size: 6vw;">catfont!</span></h1>
     <div>
         <a href="./Catfont-Regular.ttf" download>download Catfont-Regular</a>
